@@ -38,6 +38,10 @@ Standing is an action applying to nothing. Understand "stand" or "get up" as sta
 Fetching is an action applying to one touchable thing. Understand "fetch [something]" or "fetsh [something]" as fetching.
 Understand the command "throw" as something new. Throwing is an action applying to one carried thing. Understand "throw [something]" or "chuck [something]" or "toss [something]" as throwing.
 Stroking is an action applying to one thing. Understand "stroke [an animal]" or "pet [an animal]" or "praise [an animal]" or "good boy" as stroking.
+Hinting is an action out of world applying to nothing. Understand "help" or "hint" or "hints" or "help me" as Hinting.
+
+Carry out Hinting:
+	say "[italic type]Try giving your new pal a few simple commands. [puppy] is still young and is easily distracted, but don't let that keep you from trying![roman type][paragraph break][bold type]Giving a command to [the puppy]:[roman type][line break]    >[puppy], [one of]sit[or]stand[or]roll over[or]play dead[or]fetch toy[purely at random][paragraph break]".
 
 Rule for supplying a missing noun while an actor stroking:
 	now the noun is the puppy.
@@ -237,6 +241,7 @@ Instead of opening the patio door:
 	try going north instead.
 
 Before going to the living room:
+	now the patio door is open;
 	if the score is less than the maximum score:
 		say "Are you sure you're ready to show your parents?";
 		unless player consents:
@@ -253,4 +258,4 @@ After going to the living room:
 		say "You show your new pal-for-life's skill-set, wowing your parents in the process!";
 	otherwise:
 		say "Your parents are outright amazed with what you've managed to teach [the puppy], 'and you only found him a couple of hours ago, you said?' they exclaim, 'How about that?'.";
-	end the story finally saying "[bold type][if the score is 0]The good news is that[otherwise]In the end, [end if]your parents decide that [the puppy] has been a good influence on you. 'We[']ve never seen you so happy' they tell you. It looks like your adventures with [the puppy] are just beginning![roman type]".
+	end the story finally saying "[bold type][if the score is 0]The good news is that[otherwise]In the end,[end if] your parents decide that [the puppy] has been a good influence on you. 'We[']ve never seen you so happy' they tell you. It looks like your adventures with [the puppy] are just beginning![roman type]".
